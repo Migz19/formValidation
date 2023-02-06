@@ -6,9 +6,9 @@ class HomeScreen extends StatelessWidget {
   final title = "Profile";
   final userName = "Nour UWK";
   final workPosition = "Flutter engineer at One Solution co.";
-  final experiences=" Vice Head at : ' Sciences & Tech ' , MSP and Support";
-  final skills="Android (Java), Python, C#, Flutter";
-  final homeAddress="Egypt, Cairo, El Mokattam 99";
+  final experiences = " Vice Head at : ' Sciences & Tech ' , MSP and Support";
+  final skills = "Android (Java), Python, C#, Flutter";
+  final homeAddress = "Egypt, Cairo, El Mokattam 99";
   static const primaryColor = Colors.deepOrange;
   static const secondaryColor = Colors.black;
 
@@ -75,16 +75,16 @@ class HomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-              Text(
-                    userName,
-                    style: TextStyle(
-                      color: secondaryColor,
-                      fontSize: 30,
-                      fontStyle: FontStyle.italic,
-                    ),
+                Text(
+                  userName,
+                  style: TextStyle(
+                    color: secondaryColor,
+                    fontSize: 30,
+                    fontStyle: FontStyle.italic,
                   ),
+                ),
                 Padding(
-                  padding: const EdgeInsets.only(top:5,left: 10),
+                  padding: const EdgeInsets.only(top: 5, left: 10),
                   child: Icon(
                     Icons.privacy_tip_outlined,
                     color: primaryColor,
@@ -101,145 +101,155 @@ class HomeScreen extends StatelessWidget {
                   fontSize: 20,
                 )),
           ),
-              Padding(
-                padding: const EdgeInsets.only(
-                  top: 30,
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+          Padding(
+            padding: const EdgeInsets.only(
+              top: 30,
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Column(
                   children: [
-                    Column(
-                      children: [
-                        Text("540",
-                            style: TextStyle(
-                              color: primaryColor,
-                              fontSize: 40,
-                            )),
-                        Text("Rating",
-                            style: TextStyle(
-                              color: Colors.grey.shade700,
-                              fontSize: 17,
-                            )),
-                      ],
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left:40),
-                      child: Column(
-                        children: [
-                          Text("2m",
-                              style: TextStyle(
-                                color: secondaryColor,
-                                fontSize: 40,
-                              )),
-                          Text("Followers",
-                              style: TextStyle(
-                                color: Colors.grey.shade700,
-                                fontSize: 17,
-                              )),
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left:40),
-                      child: Column(
-                        children: [
-                          Text("1.2k",
-                              style: TextStyle(
-                                color: secondaryColor,
-                                fontSize: 40,
-                              )),
-                          Text("Posts",
-                              style: TextStyle(
-                                color: Colors.grey.shade700,
-                                fontSize: 17,
-                              )),
-                        ],
-                      ),
-                    ),
+                    Text("540",
+                        style: TextStyle(
+                          color: primaryColor,
+                          fontSize: 40,
+                        )),
+                    Text("Rating",
+                        style: TextStyle(
+                          color: Colors.grey.shade700,
+                          fontSize: 17,
+                        )),
                   ],
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 40),
-                child: Container(
-                  width: 200,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(16),
-                  ),
-                  clipBehavior: Clip.antiAliasWithSaveLayer,
-                  child: Stack(
-                    alignment: Alignment.center,
+                Padding(
+                  padding: const EdgeInsets.only(left: 40),
+                  child: Column(
                     children: [
-                      SizedBox(
-                        width: 200,
-                        height: 40,
-                        child: ColoredBox(
-                          color: primaryColor,
-                        ),
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.add_circle,
-                            color: Colors.white,
-                            size: 22,
-                          ),
-                          TextButton(
-                            onPressed: () {
-                              print("followed");
-                            },
-                            child: Text(
-                              "Follow",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.w700,
-                                  color: Colors.white,
-                                  fontSize: 17),
-                            ),
-                          ),
-                        ],
-                      ),
+                      Text("2m",
+                          style: TextStyle(
+                            color: secondaryColor,
+                            fontSize: 40,
+                          )),
+                      Text("Followers",
+                          style: TextStyle(
+                            color: Colors.grey.shade700,
+                            fontSize: 17,
+                          )),
                     ],
                   ),
                 ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 40),
+                  child: Column(
+                    children: [
+                      Text("1.2k",
+                          style: TextStyle(
+                            color: secondaryColor,
+                            fontSize: 40,
+                          )),
+                      Text("Posts",
+                          style: TextStyle(
+                            color: Colors.grey.shade700,
+                            fontSize: 17,
+                          )),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 40),
+            child: Container(
+              width: 200,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(16),
               ),
-
-                    Row(
-                      children: [
-                        Icon(Icons.location_pin,color: Colors.deepOrangeAccent,size: 30),
-                        Padding(
-                          padding: const EdgeInsets.only(left:15),
-                          child: Text(homeAddress,style: TextStyle(color: secondaryColor,fontSize: 20),),
-                        )
-                      ],
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  SizedBox(
+                    width: 200,
+                    height: 40,
+                    child: ColoredBox(
+                      color: primaryColor,
                     ),
-                 Flexible(
-                   child: Row(
-                            children: [
-                              Icon(Icons.work,color: Colors.orange,size: 30),
-                              Padding(
-                                padding: const EdgeInsets.only(left:15),
-                                child:  Text(experiences,style: TextStyle(color: secondaryColor,fontSize: 18),maxLines: 4,overflow: TextOverflow.ellipsis,)),
-                            ],
-                          ),
-                 ),
-
-                    Padding(
-                      padding: const EdgeInsets.only(top:18),
-                      child: Row(
-                        children: [
-                          Icon(Icons.star,color: Colors.orangeAccent,size: 30),
-                          Padding(
-                            padding: const EdgeInsets.only(left:15),
-                            child: Text(skills,style: TextStyle(color: secondaryColor,fontSize: 18),),
-                          )
-                        ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.add_circle,
+                        color: Colors.white,
+                        size: 22,
                       ),
-                    ),
+                      TextButton(
+                        onPressed: () {
+                          print("followed");
+                        },
+                        child: Text(
+                          "Follow",
+                          style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              color: Colors.white,
+                              fontSize: 17),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Row(
+            children: [
+              Icon(Icons.location_pin,
+                  color: Colors.deepOrangeAccent, size: 30),
+              Padding(
+                padding: const EdgeInsets.only(left: 15,top: 20),
+                child: Text(
+                  homeAddress,
+                  style: TextStyle(color: secondaryColor, fontSize: 20),
+                ),
+              )
+            ],
+          ),
 
-
-
-
+           Padding(
+             padding: const EdgeInsets.only(left:10),
+             child: Row(
+               children: [
+                 Icon(Icons.work, color: Colors.orange, size: 30),
+                 Flexible(
+                   child: Padding(
+                     padding: const EdgeInsets.only(left:10.0,top: 20),
+                     child: Text(
+                          experiences,
+                          style: TextStyle(color: secondaryColor, fontSize: 20),
+                          maxLines: 2,
+                        ),
+                   ),
+                 ),
+               ],
+             ),
+           ),
+          Padding(
+            padding: const EdgeInsets.only(top: 18),
+            child: Row(
+              children: [
+                Icon(Icons.star, color: Colors.orangeAccent, size: 30),
+                Padding(
+                  padding: const EdgeInsets.only(left: 15),
+                  child: Text(
+                    skills,
+                    style: TextStyle(color: secondaryColor, fontSize: 18),
+                  ),
+                )
+              ],
+            ),
+          ),
         ],
       ),
     );
