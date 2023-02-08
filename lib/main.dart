@@ -1,4 +1,5 @@
-import 'package:firstapp/HomeScreen.dart';
+import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'package:firstapp/layout/WelcomeScreen.dart';
 import 'package:flutter/material.dart';
 void main() {
   runApp(MyApp());
@@ -9,7 +10,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:HomeScreen(),
+      // home:AnimatedSplashScreen(splash: WelcomeScreen(),nextScreen: LoginScreen()),
+      home: WelcomeScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

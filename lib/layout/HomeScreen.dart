@@ -9,11 +9,11 @@ class HomeScreen extends StatelessWidget {
   final experiences = " Vice Head at : ' Sciences & Tech ' , MSP and Support";
   final skills = "Android (Java), Python, C#, Flutter";
   final homeAddress = "Egypt, Cairo, El Mokattam 99";
-  static const primaryColor = Colors.deepOrange;
-  static const secondaryColor = Colors.black;
 
   @override
   Widget build(BuildContext context) {
+    const primaryColor = Colors.deepOrange;
+    const secondaryColor = Colors.black;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -208,7 +208,7 @@ class HomeScreen extends StatelessWidget {
               Icon(Icons.location_pin,
                   color: Colors.deepOrangeAccent, size: 30),
               Padding(
-                padding: const EdgeInsets.only(left: 15,top: 20),
+                padding: const EdgeInsets.only(left: 15, top: 20),
                 child: Text(
                   homeAddress,
                   style: TextStyle(color: secondaryColor, fontSize: 20),
@@ -216,25 +216,24 @@ class HomeScreen extends StatelessWidget {
               )
             ],
           ),
-
-           Padding(
-             padding: const EdgeInsets.only(left:10),
-             child: Row(
-               children: [
-                 Icon(Icons.work, color: Colors.orange, size: 30),
-                 Flexible(
-                   child: Padding(
-                     padding: const EdgeInsets.only(left:10.0,top: 20),
-                     child: Text(
-                          experiences,
-                          style: TextStyle(color: secondaryColor, fontSize: 20),
-                          maxLines: 2,
-                        ),
-                   ),
-                 ),
-               ],
-             ),
-           ),
+          Padding(
+            padding: const EdgeInsets.only(left: 10),
+            child: Row(
+              children: [
+                Icon(Icons.work, color: Colors.orange, size: 30),
+                Flexible(
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 10.0, top: 20),
+                    child: Text(
+                      experiences,
+                      style: TextStyle(color: secondaryColor, fontSize: 20),
+                      maxLines: 2,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
           Padding(
             padding: const EdgeInsets.only(top: 18),
             child: Row(
