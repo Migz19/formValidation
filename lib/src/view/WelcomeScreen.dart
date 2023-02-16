@@ -1,6 +1,7 @@
-import 'package:firstapp/layout/LoginScreen.dart';
+import 'package:firstapp/src/view/authentication/Login/LoginScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
 
 class WelcomeScreen extends StatefulWidget {
   @override

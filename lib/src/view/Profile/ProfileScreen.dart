@@ -1,8 +1,7 @@
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatelessWidget {
+class ProfileScreen extends StatelessWidget {
   final title = "Profile";
   final userName = "Nour UWK";
   final workPosition = "Flutter engineer at One Solution co.";
